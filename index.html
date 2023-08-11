@@ -50,14 +50,25 @@ href="./app-assets/vendors/css/forms/icheck/icheck.css"
 <ir-radio-btn></ir-radio-btn>
 
 <script>
- // add event listener to checkbox
-  // document.querySelector('input[type="checkbox"]').addEventListener('change', function() {
-  //   if (this.checked) {
-  //     document.querySelector('body').classList.add('dark-theme');
-  //   } else {
-  //     document.querySelector('body').classList.remove('dark-theme');
-  //   } 
-  // });
+  const radioBtn = document.querySelector('ir-radio-btn');
+  radioBtn.data = [
+    {
+      text: 'Option 1',
+      value: '1',
+    },
+    {
+      text: 'Option 2',
+      value: '2',
+    },
+    {
+      text: 'Option 3',
+      value: '3',
+    }
+  ]
+
+  radioBtn.addEventListener('selectChange', (e) => {
+    console.log(e.detail);
+  })
 
 
 </script>
