@@ -1,0 +1,2 @@
+import{r as c,h as s}from"./p-96d6849d.js";const t=class{constructor(s){c(this,s);this.icon="ft-check"}connectedCallback(){}disconnectedCallback(){}render(){return s("i",{class:this.icon})}};export{t as ir_icon};
+//# sourceMappingURL=p-066a2b0e.entry.js.map
